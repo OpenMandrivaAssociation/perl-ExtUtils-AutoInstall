@@ -12,6 +12,7 @@ BuildRequires:	perl-devel
 BuildRequires:	perl-Sort-Versions
 BuildRequires:	ncftp
 BuildArch:	noarch
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 ExtUtils-AutoInstall module for perl
