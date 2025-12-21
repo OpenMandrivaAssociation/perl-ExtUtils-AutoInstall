@@ -12,6 +12,7 @@ Url:		https://search.cpan.org/dist/%{upstream_name}
 Source0:	http://search.cpan.org/CPAN/authors/id/A/AU/AUTRIJUS/%{upstream_name}-%{upstream_version}.tar.bz2
 Patch0:		eai.patch
 
+BuildRequires:	make
 BuildRequires:	perl-devel
 BuildRequires:	perl(ExtUtils::MakeMaker)
 BuildRequires:	perl(Sort::Versions) >= 1.2
