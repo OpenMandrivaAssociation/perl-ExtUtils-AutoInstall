@@ -1,15 +1,15 @@
 %define upstream_name    ExtUtils-AutoInstall
-%define upstream_version 0.63
+%define upstream_version 0.64
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	4
+Version:	%{upstream_version}
+Release:	1
 
 Summary:	ExtUtils::AutoInstall - Automatic install of dependencies via CPAN
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://search.cpan.org/CPAN/authors/id/A/AU/AUTRIJUS/%{upstream_name}-%{upstream_version}.tar.bz2
+Url:		https://metacpan.org/dist/ExtUtils-AutoInstall
+Source0:	https://cpan.metacpan.org/authors/id/I/IN/INGY/ExtUtils-AutoInstall-%{upstream_version}.tar.gz
 Patch0:		eai.patch
 
 BuildRequires:	make
