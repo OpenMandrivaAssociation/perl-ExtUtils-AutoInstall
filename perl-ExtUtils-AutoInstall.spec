@@ -1,15 +1,13 @@
 %define upstream_name    ExtUtils-AutoInstall
-%define upstream_version 0.64
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	0.64
+Release:	2
 
 Summary:	ExtUtils::AutoInstall - Automatic install of dependencies via CPAN
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/dist/ExtUtils-AutoInstall
-Source0:	https://cpan.metacpan.org/authors/id/I/IN/INGY/ExtUtils-AutoInstall-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/I/IN/INGY/ExtUtils-AutoInstall-%{version}.tar.gz
 Patch0:		eai.patch
 
 BuildRequires:	make
@@ -25,7 +23,7 @@ BuildArch:	noarch
 ExtUtils-AutoInstall module for perl
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 %patch0 -p1
 
 %build
@@ -47,9 +45,7 @@ make
 %changelog
 * Sat Aug 01 2009 Jérôme Quelin <jquelin@mandriva.org> 0.630.0-1mdv2010.0
 + Revision: 407034
-- rebuild using %%perl_convert_version
-
-* Mon Sep 29 2008 Oden Eriksson <oeriksson@mandriva.com> 0.63-5mdv2009.0
+- rebuild using %0.64 Mon Sep 29 2008 Oden Eriksson <oeriksson@mandriva.com> 0.63-5mdv2009.0
 + Revision: 289486
 - sync with fedora
 - disable the tests for now
